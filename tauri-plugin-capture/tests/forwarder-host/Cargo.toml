@@ -1,0 +1,16 @@
+[package]
+name = "seekershark-forwarder-host"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Keep this reproducible native harness independent of the Android application.
+[workspace]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+jni = "0.21"
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "net", "io-util", "time", "sync", "macros"] }
+tun = { version = "=0.8.14", features = ["async"] }
+tun2proxy = { version = "=0.8.7", default-features = false }

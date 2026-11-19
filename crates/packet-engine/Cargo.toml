@@ -1,0 +1,9 @@
+[package]
+name = "packet-engine"
+version = "0.1.0"
+edition = "2021"
+description = "Bounded packet decoding and classic PCAP I/O for SeekerShark"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }

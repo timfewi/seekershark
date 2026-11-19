@@ -1,0 +1,31 @@
+{
+  "name": "seekershark",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "tsc --noEmit",
+    "tauri": "tauri",
+    "android:dev": "tauri android dev",
+    "android:build": "tauri android build --target aarch64 --apk",
+    "test:engine": "cargo test -p packet-engine -p scan-engine -p radio-engine",
+    "test:ui": "playwright test",
+    "test:beautify": "bun test tests/beautify.test.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.10.0",
+    "solid-js": "^1.9.9"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@tauri-apps/cli": "^2.10.0",
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-solid": "^2.11.10"
+  }
+}

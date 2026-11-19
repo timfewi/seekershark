@@ -1,0 +1,3 @@
+[default]
+description = "Allows the app's Rust backend to access the local Android VPN capture service. VPN consent is always requested by Android."
+permissions = []

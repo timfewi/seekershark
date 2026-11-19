@@ -1,0 +1,9 @@
+[workspace]
+members = ["crates/packet-engine", "crates/scan-engine", "crates/radio-engine", "src-tauri", "tauri-plugin-capture"]
+resolver = "2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
+panic = "abort"

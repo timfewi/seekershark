@@ -1,0 +1,24 @@
+[package]
+name = "tauri-plugin-capture"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.90"
+links = "tauri-plugin-capture"
+description = "Local Android VPN capture and direct TCP/UDP forwarding for SeekerShark"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+tauri = { version = "2", default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.22"
+
+[target.'cfg(target_os = "android")'.dependencies]
+tun2proxy = { version = "=0.8.7", default-features = false }
+tun = { version = "=0.8.14", features = ["async"] }
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "net", "io-util", "time", "sync"] }
+jni = "0.21"
+libc = "0.2"
+
+[build-dependencies]
+tauri-plugin = { version = "2", features = ["build"] }

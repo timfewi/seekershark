@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/mobile-schema.json",
+  "identifier": "main",
+  "description": "Local packet analysis, TCP scanning, and Android VPN capture/export",
+  "windows": ["main"],
+  "permissions": ["core:default", "capture:default"]
+}

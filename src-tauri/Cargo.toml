@@ -1,0 +1,26 @@
+[package]
+name = "seekershark"
+version = "0.5.0"
+description = "Android packet analyzer and native TCP scanner"
+edition = "2021"
+rust-version = "1.90"
+license = "MIT"
+
+[lib]
+name = "seekershark_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+packet-engine = { path = "../crates/packet-engine" }
+scan-engine = { path = "../crates/scan-engine" }
+radio-engine = { path = "../crates/radio-engine" }
+serde_json = "1"
+tauri-plugin-capture = { path = "../tauri-plugin-capture" }
+
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.21"
