@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title">
+  <title id="title">SeekerShark</title>
+  <rect x="1" y="1" width="1198" height="258" rx="27" fill="#111111" stroke="#303030" stroke-width="2"/>
+  <rect x="64" y="43" width="174" height="174" rx="39" fill="#080808" stroke="#303030" stroke-width="2"/>
+  <!-- App mark from src-tauri/icons/source.svg -->
+  <g transform="translate(67 46) scale(.328125)">
+    <rect width="512" height="512" rx="112" fill="#080808"/>
+    <path d="M80 345h76l53-74 38 36 87-170-8 141 106 67H290l-43-38-29 38H80Z" fill="#b94747"/>
+    <path d="M80 379h352" stroke="#444444" stroke-width="8"/>
+    <circle cx="96" cy="137" r="12" fill="#b94747"/>
+  </g>
+  <text x="281" y="159" fill="#f4f4f4" font-family="system-ui, sans-serif" font-size="86" font-weight="760" letter-spacing="-3">SeekerShark</text>
+  <path d="M882 92h246M882 130h246M882 168h246" fill="none" stroke="#2c2c2c" stroke-width="2"/>
+  <path d="M882 130h43l18-17 19 35 32-57 25 39h109" fill="none" stroke="#9e3838" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1128" cy="130" r="5" fill="#b94747"/>
+</svg>

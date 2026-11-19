@@ -1,8 +1,8 @@
-# SeekerShark
+# ![SeekerShark](docs/banner.svg)
 
 See where your Android phone connects and inspect the packets it sends and receives. SeekerShark uses Android’s VPN feature to record traffic locally. You can export a capture as a PCAP file and open it in Wireshark.
 
-[See SeekerShark in action](docs/screenshots/README.md)
+[Quick demo](#quick-demo) · [Android build](#build-and-install-on-android) · [Screenshots](docs/screenshots/README.md)
 
 ## Quick demo
 
